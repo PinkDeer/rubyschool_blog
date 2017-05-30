@@ -1,10 +1,10 @@
-<h1>List of articles:</h1>
-
 <% @articles.each do |article| %>
 
   <h2> <%= article.title %></h2>
   <p> <%= article.text %></p>
+  <p> <%= link_to 'show', article_path(article) %></p>
+  <p> <%= link_to 'edit', edit_article_path(article) %></p>
 
   <hr>
 
-  <% end %>
+<% end %>
