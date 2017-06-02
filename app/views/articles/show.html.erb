@@ -6,7 +6,7 @@
 <h2>Comments</h2>
 
 
- <%= @article.comments.each do |comment| %>
+ <% @article.comments.each do |comment| %>
   <p>
     <i><%= comment.author %> said:</i><br>
     <%= comment.body %>
